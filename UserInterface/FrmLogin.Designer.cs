@@ -47,9 +47,9 @@ namespace UserInterface
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(629, 7);
+            this.pictureBox1.Location = new System.Drawing.Point(464, 10);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(47, 45);
+            this.pictureBox1.Size = new System.Drawing.Size(29, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -61,14 +61,14 @@ namespace UserInterface
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Location = new System.Drawing.Point(-1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(213, 563);
+            this.panel1.Size = new System.Drawing.Size(125, 484);
             this.panel1.TabIndex = 1;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(60, 213);
+            this.pictureBox2.Location = new System.Drawing.Point(13, 170);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(92, 94);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -79,7 +79,7 @@ namespace UserInterface
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(270, 184);
+            this.label1.Location = new System.Drawing.Point(146, 153);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 16);
             this.label1.TabIndex = 2;
@@ -89,7 +89,7 @@ namespace UserInterface
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(270, 266);
+            this.label2.Location = new System.Drawing.Point(146, 235);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 16);
             this.label2.TabIndex = 3;
@@ -98,7 +98,7 @@ namespace UserInterface
             // TxtUserName
             // 
             this.TxtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtUserName.Location = new System.Drawing.Point(270, 203);
+            this.TxtUserName.Location = new System.Drawing.Point(146, 172);
             this.TxtUserName.Name = "TxtUserName";
             this.TxtUserName.Size = new System.Drawing.Size(319, 22);
             this.TxtUserName.TabIndex = 4;
@@ -106,8 +106,9 @@ namespace UserInterface
             // TxtPassword
             // 
             this.TxtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtPassword.Location = new System.Drawing.Point(270, 285);
+            this.TxtPassword.Location = new System.Drawing.Point(146, 254);
             this.TxtPassword.Name = "TxtPassword";
+            this.TxtPassword.PasswordChar = '*';
             this.TxtPassword.Size = new System.Drawing.Size(319, 22);
             this.TxtPassword.TabIndex = 5;
             // 
@@ -116,7 +117,7 @@ namespace UserInterface
             this.BtnLogin.BackColor = System.Drawing.Color.DodgerBlue;
             this.BtnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnLogin.Location = new System.Drawing.Point(369, 347);
+            this.BtnLogin.Location = new System.Drawing.Point(245, 316);
             this.BtnLogin.Name = "BtnLogin";
             this.BtnLogin.Size = new System.Drawing.Size(120, 39);
             this.BtnLogin.TabIndex = 6;
@@ -129,7 +130,7 @@ namespace UserInterface
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(684, 563);
+            this.ClientSize = new System.Drawing.Size(502, 481);
             this.ControlBox = false;
             this.Controls.Add(this.BtnLogin);
             this.Controls.Add(this.TxtPassword);

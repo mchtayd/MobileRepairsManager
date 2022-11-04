@@ -18,7 +18,8 @@ namespace UserInterface
         }
         private void FrmHomePage_Load(object sender, EventArgs e)
         {
-
+            Frm1 frm1 = new Frm1();
+            OpenPage(frm1);
         }
         private void PictureEx_Click(object sender, EventArgs e)
         {
@@ -29,19 +30,31 @@ namespace UserInterface
 
         private void PictureHome_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Frm1 frm1 = new Frm1();
+            OpenPage(frm1);
         }
-        public void OpenTabPage(string pageName, string pageText, Control winForm)
+
+        private void Frm2Page_Click(object sender, EventArgs e)
+        {
+            Frm2 frm2 = new Frm2();
+            OpenPage(frm2);
+        }
+        private void Frm3Page_Click(object sender, EventArgs e)
+        {
+            Frm3 frm3 = new Frm3();
+            OpenPage(frm3);
+        }
+
+        void OpenPage(Form form)
         {
             tabPanel.Controls.Clear();
-            Panel panel = new Panel();
-            //tabPage.SetBounds(tabPage.Bounds.X, tabPage.Bounds.Y, 500, tabPage.Bounds.Height);
-            panel. = false;
-            panel.
-            tabPage.Name = pageName;
-            //tabPage.Width = 500;
-            tabPage.Controls.Add(winForm);
-            tabAnasayfa.SelectedTab = tabAnasayfa.TabPages[pageName];
+            form.TopLevel = false;
+            tabPanel.Controls.Add(form);
+            form.Show();
+            form.Dock = DockStyle.Fill;
+            form.BringToFront();
         }
+
+        
     }
 }

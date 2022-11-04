@@ -32,26 +32,26 @@ namespace UserInterface
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHomePage));
             this.panel1 = new System.Windows.Forms.Panel();
             this.PictureEx = new System.Windows.Forms.PictureBox();
-            this.PictureSettings = new System.Windows.Forms.PictureBox();
-            this.PictureCustomer = new System.Windows.Forms.PictureBox();
-            this.PictureHome = new System.Windows.Forms.PictureBox();
+            this.Frm2Page = new System.Windows.Forms.PictureBox();
+            this.Frm3Page = new System.Windows.Forms.PictureBox();
+            this.Frm1Page = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureEx)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureSettings)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureCustomer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureHome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Frm2Page)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Frm3Page)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Frm1Page)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Orange;
             this.panel1.Controls.Add(this.PictureEx);
-            this.panel1.Controls.Add(this.PictureSettings);
-            this.panel1.Controls.Add(this.PictureCustomer);
-            this.panel1.Controls.Add(this.PictureHome);
+            this.panel1.Controls.Add(this.Frm2Page);
+            this.panel1.Controls.Add(this.Frm3Page);
+            this.panel1.Controls.Add(this.Frm1Page);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -70,39 +70,41 @@ namespace UserInterface
             this.PictureEx.TabStop = false;
             this.PictureEx.Click += new System.EventHandler(this.PictureEx_Click);
             // 
-            // PictureSettings
+            // Frm2Page
             // 
-            this.PictureSettings.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PictureSettings.Image = ((System.Drawing.Image)(resources.GetObject("PictureSettings.Image")));
-            this.PictureSettings.Location = new System.Drawing.Point(11, 321);
-            this.PictureSettings.Name = "PictureSettings";
-            this.PictureSettings.Size = new System.Drawing.Size(55, 59);
-            this.PictureSettings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureSettings.TabIndex = 5;
-            this.PictureSettings.TabStop = false;
+            this.Frm2Page.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Frm2Page.Image = ((System.Drawing.Image)(resources.GetObject("Frm2Page.Image")));
+            this.Frm2Page.Location = new System.Drawing.Point(11, 321);
+            this.Frm2Page.Name = "Frm2Page";
+            this.Frm2Page.Size = new System.Drawing.Size(55, 59);
+            this.Frm2Page.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Frm2Page.TabIndex = 5;
+            this.Frm2Page.TabStop = false;
+            this.Frm2Page.Click += new System.EventHandler(this.Frm2Page_Click);
             // 
-            // PictureCustomer
+            // Frm3Page
             // 
-            this.PictureCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PictureCustomer.Image = ((System.Drawing.Image)(resources.GetObject("PictureCustomer.Image")));
-            this.PictureCustomer.Location = new System.Drawing.Point(12, 209);
-            this.PictureCustomer.Name = "PictureCustomer";
-            this.PictureCustomer.Size = new System.Drawing.Size(52, 59);
-            this.PictureCustomer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureCustomer.TabIndex = 4;
-            this.PictureCustomer.TabStop = false;
+            this.Frm3Page.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Frm3Page.Image = ((System.Drawing.Image)(resources.GetObject("Frm3Page.Image")));
+            this.Frm3Page.Location = new System.Drawing.Point(12, 209);
+            this.Frm3Page.Name = "Frm3Page";
+            this.Frm3Page.Size = new System.Drawing.Size(52, 59);
+            this.Frm3Page.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Frm3Page.TabIndex = 4;
+            this.Frm3Page.TabStop = false;
+            this.Frm3Page.Click += new System.EventHandler(this.Frm3Page_Click);
             // 
-            // PictureHome
+            // Frm1Page
             // 
-            this.PictureHome.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PictureHome.Image = ((System.Drawing.Image)(resources.GetObject("PictureHome.Image")));
-            this.PictureHome.Location = new System.Drawing.Point(9, 442);
-            this.PictureHome.Name = "PictureHome";
-            this.PictureHome.Size = new System.Drawing.Size(59, 59);
-            this.PictureHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureHome.TabIndex = 3;
-            this.PictureHome.TabStop = false;
-            this.PictureHome.Click += new System.EventHandler(this.PictureHome_Click);
+            this.Frm1Page.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Frm1Page.Image = ((System.Drawing.Image)(resources.GetObject("Frm1Page.Image")));
+            this.Frm1Page.Location = new System.Drawing.Point(9, 442);
+            this.Frm1Page.Name = "Frm1Page";
+            this.Frm1Page.Size = new System.Drawing.Size(59, 59);
+            this.Frm1Page.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Frm1Page.TabIndex = 3;
+            this.Frm1Page.TabStop = false;
+            this.Frm1Page.Click += new System.EventHandler(this.PictureHome_Click);
             // 
             // panel3
             // 
@@ -146,9 +148,9 @@ namespace UserInterface
             this.Load += new System.EventHandler(this.FrmHomePage_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PictureEx)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureSettings)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureCustomer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureHome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Frm2Page)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Frm3Page)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Frm1Page)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,9 +159,9 @@ namespace UserInterface
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox PictureHome;
-        private System.Windows.Forms.PictureBox PictureCustomer;
-        private System.Windows.Forms.PictureBox PictureSettings;
+        private System.Windows.Forms.PictureBox Frm1Page;
+        private System.Windows.Forms.PictureBox Frm3Page;
+        private System.Windows.Forms.PictureBox Frm2Page;
         private System.Windows.Forms.PictureBox PictureEx;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;

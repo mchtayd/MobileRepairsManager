@@ -461,7 +461,7 @@
         AABJRU5ErkJggg==
 </value>
   </data>
-  <data name="PictureSettings.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Frm2Page.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAASwAAAErCAYAAABkeL7NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAANX5JREFUeF7tnQmYXFWVxyHMuCKCimKIIZ1QVfece6uSZpS40Iq4O6jEEdxhVBBw
@@ -695,7 +695,7 @@
         M5jdt6DPyq1MYrQwpa3nz5+f+c57o8hstNH/A1RB6ZplLOnEAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="PictureCustomer.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Frm3Page.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAUAAAAGcCAYAAACobHn+AAAABGdBTUEAALGPC/xhBQAAGy5JREFUeF7t
         3X/EpmXex/FbkowkGclKspIkGRnJYyUrSVYe/ZG1srKSR5IkWUlkraysJFlZSVaStZIkK1lJkqyRJEmy
@@ -817,7 +817,7 @@
         AAAASUVORK5CYII=
 </value>
   </data>
-  <data name="PictureHome.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Frm1Page.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAEC
         PQABAj0B2GTo1QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAACLDSURBVHhe7d17

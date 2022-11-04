@@ -58,7 +58,7 @@ namespace UserInterface
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(357, 24);
+            this.dataGridView1.Location = new System.Drawing.Point(354, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(884, 711);
             this.dataGridView1.TabIndex = 48;
@@ -68,7 +68,7 @@ namespace UserInterface
             this.button1.BackColor = System.Drawing.Color.Orange;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(160, 617);
+            this.button1.Location = new System.Drawing.Point(157, 605);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 39);
             this.button1.TabIndex = 47;
@@ -80,7 +80,7 @@ namespace UserInterface
             this.BtnLogin.BackColor = System.Drawing.Color.DodgerBlue;
             this.BtnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnLogin.Location = new System.Drawing.Point(15, 617);
+            this.BtnLogin.Location = new System.Drawing.Point(12, 605);
             this.BtnLogin.Name = "BtnLogin";
             this.BtnLogin.Size = new System.Drawing.Size(120, 39);
             this.BtnLogin.TabIndex = 46;
@@ -89,7 +89,7 @@ namespace UserInterface
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(160, 579);
+            this.textBox6.Location = new System.Drawing.Point(157, 567);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(102, 20);
             this.textBox6.TabIndex = 45;
@@ -98,7 +98,7 @@ namespace UserInterface
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(157, 560);
+            this.label10.Location = new System.Drawing.Point(154, 548);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(79, 16);
             this.label10.TabIndex = 44;
@@ -106,7 +106,7 @@ namespace UserInterface
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(17, 579);
+            this.textBox5.Location = new System.Drawing.Point(14, 567);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(102, 20);
             this.textBox5.TabIndex = 43;
@@ -115,7 +115,7 @@ namespace UserInterface
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(14, 560);
+            this.label9.Location = new System.Drawing.Point(11, 548);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(75, 16);
             this.label9.TabIndex = 42;
@@ -124,7 +124,7 @@ namespace UserInterface
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(57, 472);
+            this.comboBox2.Location = new System.Drawing.Point(54, 460);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(205, 21);
             this.comboBox2.TabIndex = 41;
@@ -133,7 +133,7 @@ namespace UserInterface
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(54, 451);
+            this.label8.Location = new System.Drawing.Point(51, 439);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(45, 16);
             this.label8.TabIndex = 40;
@@ -141,7 +141,7 @@ namespace UserInterface
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(57, 405);
+            this.textBox4.Location = new System.Drawing.Point(54, 393);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(205, 20);
             this.textBox4.TabIndex = 39;
@@ -150,7 +150,7 @@ namespace UserInterface
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(54, 386);
+            this.label7.Location = new System.Drawing.Point(51, 374);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(59, 16);
             this.label7.TabIndex = 38;
@@ -158,7 +158,7 @@ namespace UserInterface
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(57, 332);
+            this.textBox3.Location = new System.Drawing.Point(54, 320);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(205, 20);
             this.textBox3.TabIndex = 37;
@@ -167,7 +167,7 @@ namespace UserInterface
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(54, 313);
+            this.label6.Location = new System.Drawing.Point(51, 301);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(92, 16);
             this.label6.TabIndex = 36;
@@ -175,7 +175,7 @@ namespace UserInterface
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(57, 257);
+            this.textBox2.Location = new System.Drawing.Point(54, 245);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(205, 20);
             this.textBox2.TabIndex = 35;
@@ -184,7 +184,7 @@ namespace UserInterface
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(54, 238);
+            this.label5.Location = new System.Drawing.Point(51, 226);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(91, 16);
             this.label5.TabIndex = 34;
@@ -192,7 +192,7 @@ namespace UserInterface
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(57, 194);
+            this.textBox1.Location = new System.Drawing.Point(54, 182);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(205, 20);
             this.textBox1.TabIndex = 33;
@@ -201,7 +201,7 @@ namespace UserInterface
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(54, 175);
+            this.label4.Location = new System.Drawing.Point(51, 163);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 16);
             this.label4.TabIndex = 32;
@@ -210,7 +210,7 @@ namespace UserInterface
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(57, 128);
+            this.comboBox1.Location = new System.Drawing.Point(54, 116);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(205, 21);
             this.comboBox1.TabIndex = 31;
@@ -219,7 +219,7 @@ namespace UserInterface
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(54, 107);
+            this.label3.Location = new System.Drawing.Point(51, 95);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 16);
             this.label3.TabIndex = 30;
@@ -229,7 +229,7 @@ namespace UserInterface
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(54, 39);
+            this.label2.Location = new System.Drawing.Point(51, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 16);
             this.label2.TabIndex = 29;
@@ -239,7 +239,7 @@ namespace UserInterface
             // 
             this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.Orange;
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(57, 60);
+            this.dateTimePicker1.Location = new System.Drawing.Point(54, 48);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(205, 20);
             this.dateTimePicker1.TabIndex = 28;
@@ -247,7 +247,7 @@ namespace UserInterface
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.panel2.Location = new System.Drawing.Point(327, 24);
+            this.panel2.Location = new System.Drawing.Point(324, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(10, 724);
             this.panel2.TabIndex = 27;
@@ -257,7 +257,7 @@ namespace UserInterface
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1306, 817);
+            this.ClientSize = new System.Drawing.Size(1257, 737);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnLogin);
@@ -280,6 +280,7 @@ namespace UserInterface
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.panel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm1";
             this.Text = "Frm1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
