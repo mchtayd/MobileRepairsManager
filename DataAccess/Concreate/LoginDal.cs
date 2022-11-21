@@ -32,7 +32,18 @@ namespace DataAccess.Concreate
 
         public string Add(Login entity)
         {
-            throw new NotImplementedException();
+            try
+            {
+                dataReader = sqlServices.StoreReader("LoginAdd",
+                    new SqlParameter("@username", entity.UserName),
+                    new SqlParameter("@password", entity.Password));
+                dataReader.Close();
+                return "OK";
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
         }
 
         public string Delete(int id)
@@ -53,15 +64,29 @@ namespace DataAccess.Concreate
                 dataReader.Close();
                 return item;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 return null;
             }
         }
 
-        public List<Login> GetList()
+        public List<Login> GetList(string username)
         {
-            throw new NotImplementedException();
+            try
+            {
+                List<Login> logins = new List<Login>();
+                dataReader = sqlServices.StoreReader("LoginListControl", new SqlParameter("@username", username));
+                while (dataReader.Read())
+                {
+                    logins.Add(new Login(dataReader["ID"].ConInt(), dataReader["USERNAME"].ToString(), dataReader["PASSWORD"].ToString()));
+                }
+                dataReader.Close();
+                return logins;
+            }
+            catch (Exception)
+            {
+                return new List<Login>();
+            }
         }
 
         public string Update(Login entity)

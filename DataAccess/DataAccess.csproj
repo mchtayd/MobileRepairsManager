@@ -46,6 +46,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AdvancedDataGridView, Version=0.1.0.10, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ADGV.0.1.0.10\lib\net40\AdvancedDataGridView.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -58,7 +61,9 @@
   <ItemGroup>
     <Compile Include="Abstract\IRepository.cs" />
     <Compile Include="Abstract\SqlServices.cs" />
+    <Compile Include="Concreate\CostomerDal.cs" />
     <Compile Include="Concreate\LoginDal.cs" />
+    <Compile Include="Concreate\PartDal.cs" />
     <Compile Include="Database\SqlDatabase.cs" />
     <Compile Include="Concreate\Helper.cs" />
     <Compile Include="MobilRepairDBDataSet.Designer.cs">
@@ -95,6 +100,7 @@
     <None Include="MobilRepairDBDataSet.xss">
       <DependentUpon>MobilRepairDBDataSet.xsd</DependentUpon>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

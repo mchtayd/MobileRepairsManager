@@ -30,7 +30,14 @@ namespace Business.Concreate
 
         public string Add(Login entity)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return loginDal.Add(entity);
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
         }
 
         public string Delete(int id)
@@ -50,9 +57,16 @@ namespace Business.Concreate
             }
         }
 
-        public List<Login> GetList()
+        public List<Login> GetList(string username)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return loginDal.GetList(username);
+            }
+            catch (Exception)
+            {
+                return new List<Login>();
+            }
         }
 
         public string Update(Login entity)

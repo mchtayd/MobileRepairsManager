@@ -18,7 +18,7 @@ namespace UserInterface
         public FrmLogin()
         {
             InitializeComponent();
-            loginManager = LoginManager.GetInstance();
+            loginManager = LoginManager.GetInstance();               
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -39,14 +39,30 @@ namespace UserInterface
                 MessageBox.Show("Hatalı Kullanıcı adı veya şifre girdiniz!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
-            int id = login.Id;
             FrmHomePage frmHomePage = new FrmHomePage();
             frmHomePage.Show();
             this.Hide();
+        }
 
-            
+        private void LinkCreateAccount_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmCreateAccount frmCreateAccount = new FrmCreateAccount();
+            frmCreateAccount.Show();
+            this.Hide();
+        }
 
+        private void BtnSee_Click(object sender, EventArgs e)
+        {
+            if (TxtPassword.UseSystemPasswordChar == true)
+            {
+                TxtPassword.UseSystemPasswordChar = false;
+                return;
+            }
+            if (TxtPassword.UseSystemPasswordChar == false)
+            {
+                TxtPassword.UseSystemPasswordChar = true;
+                return;
+            }
         }
     }
 }

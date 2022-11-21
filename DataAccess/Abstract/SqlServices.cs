@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,15 +11,24 @@ namespace DataAccess.Abstract
 {
     public class SqlServices
     {
-        readonly string conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\MAYıldırım\source\repos\MobileRepairsManager\DataAccess\MobilRepairDB.mdf;Integrated Security=True;Connect Timeout=30"; // SERVER
-        SqlConnection connection;
+
+        readonly string conString = String.Empty; // SERVER
+        readonly SqlConnection connection;
 
         public SqlServices()
         {
-            connection = new SqlConnection();
-            connection.ConnectionString = conString; // bağlantı yolu bağlantı kuran değişkenin içine atandı.
-        }
 
+            conString = "Data Source=DESKTOP-QB5K7DU; Database=DATAUMAY; Integrated Security=True";
+
+            //string databasePath = System.Reflection.Assembly.GetExecutingAssembly().Location.Replace("DataAccess.dll", "MobilRepairDB.mdf");
+            //conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + databasePath + ";Integrated Security=True;Connect Timeout=30"; // SERVER
+
+            conString = "Data Source=DESKTOP-QB5K7DU; Database=MobileRepairsManagerData; Integrated Security=True";
+            connection = new SqlConnection
+            {
+                ConnectionString = conString // bağlantı yolu bağlantı kuran değişkenin içine atandı.
+            };
+        }
 
         //veri tabanı kapalıysa aç metodu.
         SqlConnection OpenConnection()

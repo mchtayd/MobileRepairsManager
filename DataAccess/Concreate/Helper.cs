@@ -11,7 +11,6 @@ namespace DataAccess
     public static class Helper
     {
 
-        static double outValue = 0;
         static int outValue2 = 0;
         static DateTime outValue3 = new DateTime(2000, 01, 01);
         public static int ConInt(this object param)
@@ -59,5 +58,6 @@ namespace DataAccess
             }
             return table;
         }
+        
     }
 }

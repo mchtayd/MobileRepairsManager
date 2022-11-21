@@ -36,8 +36,10 @@ namespace UserInterface
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.TxtUserName = new System.Windows.Forms.TextBox();
-            this.TxtPassword = new System.Windows.Forms.TextBox();
             this.BtnLogin = new System.Windows.Forms.Button();
+            this.LinkCreateAccount = new System.Windows.Forms.LinkLabel();
+            this.BtnSee = new System.Windows.Forms.Button();
+            this.TxtPassword = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -79,7 +81,7 @@ namespace UserInterface
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(146, 153);
+            this.label1.Location = new System.Drawing.Point(164, 153);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 16);
             this.label1.TabIndex = 2;
@@ -89,7 +91,7 @@ namespace UserInterface
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(146, 235);
+            this.label2.Location = new System.Drawing.Point(164, 213);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 16);
             this.label2.TabIndex = 3;
@@ -98,32 +100,55 @@ namespace UserInterface
             // TxtUserName
             // 
             this.TxtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtUserName.Location = new System.Drawing.Point(146, 172);
+            this.TxtUserName.Location = new System.Drawing.Point(164, 172);
             this.TxtUserName.Name = "TxtUserName";
-            this.TxtUserName.Size = new System.Drawing.Size(319, 22);
+            this.TxtUserName.Size = new System.Drawing.Size(283, 22);
             this.TxtUserName.TabIndex = 4;
-            // 
-            // TxtPassword
-            // 
-            this.TxtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtPassword.Location = new System.Drawing.Point(146, 254);
-            this.TxtPassword.Name = "TxtPassword";
-            this.TxtPassword.PasswordChar = '*';
-            this.TxtPassword.Size = new System.Drawing.Size(319, 22);
-            this.TxtPassword.TabIndex = 5;
             // 
             // BtnLogin
             // 
             this.BtnLogin.BackColor = System.Drawing.Color.DodgerBlue;
             this.BtnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnLogin.Location = new System.Drawing.Point(245, 316);
+            this.BtnLogin.Location = new System.Drawing.Point(245, 281);
             this.BtnLogin.Name = "BtnLogin";
             this.BtnLogin.Size = new System.Drawing.Size(120, 39);
             this.BtnLogin.TabIndex = 6;
             this.BtnLogin.Text = "Login";
             this.BtnLogin.UseVisualStyleBackColor = false;
             this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
+            // 
+            // LinkCreateAccount
+            // 
+            this.LinkCreateAccount.AutoSize = true;
+            this.LinkCreateAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LinkCreateAccount.Location = new System.Drawing.Point(256, 331);
+            this.LinkCreateAccount.Name = "LinkCreateAccount";
+            this.LinkCreateAccount.Size = new System.Drawing.Size(99, 16);
+            this.LinkCreateAccount.TabIndex = 7;
+            this.LinkCreateAccount.TabStop = true;
+            this.LinkCreateAccount.Text = "Create Account";
+            this.LinkCreateAccount.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkCreateAccount_LinkClicked);
+            // 
+            // BtnSee
+            // 
+            this.BtnSee.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSee.Image = ((System.Drawing.Image)(resources.GetObject("BtnSee.Image")));
+            this.BtnSee.Location = new System.Drawing.Point(453, 232);
+            this.BtnSee.Name = "BtnSee";
+            this.BtnSee.Size = new System.Drawing.Size(24, 22);
+            this.BtnSee.TabIndex = 16;
+            this.BtnSee.UseVisualStyleBackColor = true;
+            this.BtnSee.Click += new System.EventHandler(this.BtnSee_Click);
+            // 
+            // TxtPassword
+            // 
+            this.TxtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtPassword.Location = new System.Drawing.Point(164, 232);
+            this.TxtPassword.Name = "TxtPassword";
+            this.TxtPassword.Size = new System.Drawing.Size(283, 22);
+            this.TxtPassword.TabIndex = 17;
+            this.TxtPassword.UseSystemPasswordChar = true;
             // 
             // FrmLogin
             // 
@@ -132,8 +157,10 @@ namespace UserInterface
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(502, 481);
             this.ControlBox = false;
-            this.Controls.Add(this.BtnLogin);
             this.Controls.Add(this.TxtPassword);
+            this.Controls.Add(this.BtnSee);
+            this.Controls.Add(this.LinkCreateAccount);
+            this.Controls.Add(this.BtnLogin);
             this.Controls.Add(this.TxtUserName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -159,7 +186,9 @@ namespace UserInterface
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox TxtUserName;
-        private System.Windows.Forms.TextBox TxtPassword;
         private System.Windows.Forms.Button BtnLogin;
+        private System.Windows.Forms.LinkLabel LinkCreateAccount;
+        private System.Windows.Forms.Button BtnSee;
+        private System.Windows.Forms.TextBox TxtPassword;
     }
 }
