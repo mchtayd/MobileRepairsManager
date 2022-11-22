@@ -18,12 +18,13 @@ namespace DataAccess.Abstract
         public SqlServices()
         {
 
-            conString = "Data Source=DESKTOP-QB5K7DU; Database=DATAUMAY; Integrated Security=True";
+            //conString = "Data Source=DESKTOP-QB5K7DU; Database=MobileRepairsManagerData; Integrated Security=True";
 
-            //string databasePath = System.Reflection.Assembly.GetExecutingAssembly().Location.Replace("DataAccess.dll", "MobilRepairDB.mdf");
-            //conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + databasePath + ";Integrated Security=True;Connect Timeout=30"; // SERVER
+            //conString = @"Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=aspnet-MvcMovie;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\Movies.mdf";
 
-            conString = "Data Source=DESKTOP-QB5K7DU; Database=MobileRepairsManagerData; Integrated Security=True";
+            string databasePath = System.Reflection.Assembly.GetExecutingAssembly().Location.Replace("DataAccess.dll", "MobileRepairsManagerData.mdf");
+            conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + databasePath + ";Integrated Security=True; Connect Timeout=30"; // SERVER
+
             connection = new SqlConnection
             {
                 ConnectionString = conString // bağlantı yolu bağlantı kuran değişkenin içine atandı.

@@ -128,5 +128,29 @@ namespace UserInterface
                 Temizle();
             }
         }
+
+        private void DtgList_CellMouseClick_1(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (DtgList.CurrentRow == null)
+            {
+                MessageBox.Show("Öncelikle bir kayıt seçiniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            id = DtgList.CurrentRow.Cells["Id"].Value.ConInt();
+            TxtName.Text = DtgList.CurrentRow.Cells["Name"].Value.ToString();
+            TxtPhone.Text = DtgList.CurrentRow.Cells["Phone"].Value.ToString();
+            TxtAdress.Text = DtgList.CurrentRow.Cells["Adress"].Value.ToString();
+        }
+
+        private void DtgList_FilterStringChanged(object sender, EventArgs e)
+        {
+            dataBinder.Filter = DtgList.FilterString;
+        }
+
+        private void DtgList_SortStringChanged(object sender, EventArgs e)
+        {
+            dataBinder.Sort = DtgList.SortString;
+        }
     }
 }

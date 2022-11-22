@@ -47,6 +47,7 @@
     <Compile Include="Concreate\CostomerManager.cs" />
     <Compile Include="Concreate\LoginManager.cs" />
     <Compile Include="Concreate\PartManager.cs" />
+    <Compile Include="Concreate\RepairManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -29,70 +29,70 @@ namespace UserInterface
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.BtnLogin = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.BtnDelete = new System.Windows.Forms.Button();
+            this.BtnSave = new System.Windows.Forms.Button();
+            this.TxtRepairCost = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.TxtSpareCost = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.CmbSpare = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.TxtProblem = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.TxtDeviceModel = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TxtDeviceName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtNuber = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CmbCostomer = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.DtRepairDate = new System.Windows.Forms.DateTimePicker();
             this.panel2 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dataBinder = new System.Windows.Forms.BindingSource(this.components);
+            this.DtgList = new ADGV.AdvancedDataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBinder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DtgList)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // BtnDelete
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(354, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(884, 711);
-            this.dataGridView1.TabIndex = 48;
+            this.BtnDelete.BackColor = System.Drawing.Color.Orange;
+            this.BtnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnDelete.Location = new System.Drawing.Point(157, 605);
+            this.BtnDelete.Name = "BtnDelete";
+            this.BtnDelete.Size = new System.Drawing.Size(120, 39);
+            this.BtnDelete.TabIndex = 47;
+            this.BtnDelete.Text = "Delete";
+            this.BtnDelete.UseVisualStyleBackColor = false;
+            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
-            // button1
+            // BtnSave
             // 
-            this.button1.BackColor = System.Drawing.Color.Orange;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(157, 605);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 39);
-            this.button1.TabIndex = 47;
-            this.button1.Text = "Delete";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BtnSave.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BtnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnSave.Location = new System.Drawing.Point(12, 605);
+            this.BtnSave.Name = "BtnSave";
+            this.BtnSave.Size = new System.Drawing.Size(120, 39);
+            this.BtnSave.TabIndex = 46;
+            this.BtnSave.Text = "Save";
+            this.BtnSave.UseVisualStyleBackColor = false;
+            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
-            // BtnLogin
+            // TxtRepairCost
             // 
-            this.BtnLogin.BackColor = System.Drawing.Color.DodgerBlue;
-            this.BtnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnLogin.Location = new System.Drawing.Point(12, 605);
-            this.BtnLogin.Name = "BtnLogin";
-            this.BtnLogin.Size = new System.Drawing.Size(120, 39);
-            this.BtnLogin.TabIndex = 46;
-            this.BtnLogin.Text = "Save";
-            this.BtnLogin.UseVisualStyleBackColor = false;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(157, 567);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(102, 20);
-            this.textBox6.TabIndex = 45;
+            this.TxtRepairCost.Location = new System.Drawing.Point(157, 567);
+            this.TxtRepairCost.Name = "TxtRepairCost";
+            this.TxtRepairCost.Size = new System.Drawing.Size(102, 20);
+            this.TxtRepairCost.TabIndex = 45;
+            this.TxtRepairCost.TextChanged += new System.EventHandler(this.TxtRepairCost_TextChanged);
             // 
             // label10
             // 
@@ -104,12 +104,14 @@ namespace UserInterface
             this.label10.TabIndex = 44;
             this.label10.Text = "Repair Cost";
             // 
-            // textBox5
+            // TxtSpareCost
             // 
-            this.textBox5.Location = new System.Drawing.Point(14, 567);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(102, 20);
-            this.textBox5.TabIndex = 43;
+            this.TxtSpareCost.Enabled = false;
+            this.TxtSpareCost.Location = new System.Drawing.Point(14, 567);
+            this.TxtSpareCost.Name = "TxtSpareCost";
+            this.TxtSpareCost.Size = new System.Drawing.Size(102, 20);
+            this.TxtSpareCost.TabIndex = 43;
+            this.TxtSpareCost.TextChanged += new System.EventHandler(this.TxtSpareCost_TextChanged);
             // 
             // label9
             // 
@@ -121,13 +123,14 @@ namespace UserInterface
             this.label9.TabIndex = 42;
             this.label9.Text = "Spare Cost";
             // 
-            // comboBox2
+            // CmbSpare
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(54, 460);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(205, 21);
-            this.comboBox2.TabIndex = 41;
+            this.CmbSpare.FormattingEnabled = true;
+            this.CmbSpare.Location = new System.Drawing.Point(54, 460);
+            this.CmbSpare.Name = "CmbSpare";
+            this.CmbSpare.Size = new System.Drawing.Size(205, 21);
+            this.CmbSpare.TabIndex = 41;
+            this.CmbSpare.SelectedIndexChanged += new System.EventHandler(this.CmbSpare_SelectedIndexChanged);
             // 
             // label8
             // 
@@ -139,12 +142,12 @@ namespace UserInterface
             this.label8.TabIndex = 40;
             this.label8.Text = "Spare";
             // 
-            // textBox4
+            // TxtProblem
             // 
-            this.textBox4.Location = new System.Drawing.Point(54, 393);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(205, 20);
-            this.textBox4.TabIndex = 39;
+            this.TxtProblem.Location = new System.Drawing.Point(54, 393);
+            this.TxtProblem.Name = "TxtProblem";
+            this.TxtProblem.Size = new System.Drawing.Size(205, 20);
+            this.TxtProblem.TabIndex = 39;
             // 
             // label7
             // 
@@ -156,12 +159,12 @@ namespace UserInterface
             this.label7.TabIndex = 38;
             this.label7.Text = "Problem";
             // 
-            // textBox3
+            // TxtDeviceModel
             // 
-            this.textBox3.Location = new System.Drawing.Point(54, 320);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(205, 20);
-            this.textBox3.TabIndex = 37;
+            this.TxtDeviceModel.Location = new System.Drawing.Point(54, 320);
+            this.TxtDeviceModel.Name = "TxtDeviceModel";
+            this.TxtDeviceModel.Size = new System.Drawing.Size(205, 20);
+            this.TxtDeviceModel.TabIndex = 37;
             // 
             // label6
             // 
@@ -173,12 +176,12 @@ namespace UserInterface
             this.label6.TabIndex = 36;
             this.label6.Text = "Device Model";
             // 
-            // textBox2
+            // TxtDeviceName
             // 
-            this.textBox2.Location = new System.Drawing.Point(54, 245);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(205, 20);
-            this.textBox2.TabIndex = 35;
+            this.TxtDeviceName.Location = new System.Drawing.Point(54, 245);
+            this.TxtDeviceName.Name = "TxtDeviceName";
+            this.TxtDeviceName.Size = new System.Drawing.Size(205, 20);
+            this.TxtDeviceName.TabIndex = 35;
             // 
             // label5
             // 
@@ -190,12 +193,12 @@ namespace UserInterface
             this.label5.TabIndex = 34;
             this.label5.Text = "Device Name";
             // 
-            // textBox1
+            // TxtNuber
             // 
-            this.textBox1.Location = new System.Drawing.Point(54, 182);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(205, 20);
-            this.textBox1.TabIndex = 33;
+            this.TxtNuber.Location = new System.Drawing.Point(54, 182);
+            this.TxtNuber.Name = "TxtNuber";
+            this.TxtNuber.Size = new System.Drawing.Size(205, 20);
+            this.TxtNuber.TabIndex = 33;
             // 
             // label4
             // 
@@ -207,13 +210,13 @@ namespace UserInterface
             this.label4.TabIndex = 32;
             this.label4.Text = "Phone Number";
             // 
-            // comboBox1
+            // CmbCostomer
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(54, 116);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(205, 21);
-            this.comboBox1.TabIndex = 31;
+            this.CmbCostomer.FormattingEnabled = true;
+            this.CmbCostomer.Location = new System.Drawing.Point(54, 116);
+            this.CmbCostomer.Name = "CmbCostomer";
+            this.CmbCostomer.Size = new System.Drawing.Size(205, 21);
+            this.CmbCostomer.TabIndex = 31;
             // 
             // label3
             // 
@@ -235,14 +238,14 @@ namespace UserInterface
             this.label2.TabIndex = 29;
             this.label2.Text = "Repair Date";
             // 
-            // dateTimePicker1
+            // DtRepairDate
             // 
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.Orange;
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(54, 48);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(205, 20);
-            this.dateTimePicker1.TabIndex = 28;
+            this.DtRepairDate.CalendarMonthBackground = System.Drawing.Color.Orange;
+            this.DtRepairDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DtRepairDate.Location = new System.Drawing.Point(54, 48);
+            this.DtRepairDate.Name = "DtRepairDate";
+            this.DtRepairDate.Size = new System.Drawing.Size(205, 20);
+            this.DtRepairDate.TabIndex = 28;
             // 
             // panel2
             // 
@@ -252,66 +255,109 @@ namespace UserInterface
             this.panel2.Size = new System.Drawing.Size(10, 724);
             this.panel2.TabIndex = 27;
             // 
+            // DtgList
+            // 
+            this.DtgList.AllowUserToAddRows = false;
+            this.DtgList.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Orange;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.DtgList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DtgList.AutoGenerateContextFilters = true;
+            this.DtgList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DtgList.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DtgList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DtgList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DtgList.DateWithTime = false;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Wheat;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DtgList.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DtgList.Location = new System.Drawing.Point(340, 12);
+            this.DtgList.Name = "DtgList";
+            this.DtgList.ReadOnly = true;
+            this.DtgList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DtgList.Size = new System.Drawing.Size(905, 724);
+            this.DtgList.TabIndex = 56;
+            this.DtgList.TimeFilter = false;
+            this.DtgList.SortStringChanged += new System.EventHandler(this.DtgList_SortStringChanged);
+            this.DtgList.FilterStringChanged += new System.EventHandler(this.DtgList_FilterStringChanged);
+            this.DtgList.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DtgList_CellMouseClick_1);
+            // 
             // Frm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1257, 737);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.BtnLogin);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.DtgList);
+            this.Controls.Add(this.BtnDelete);
+            this.Controls.Add(this.BtnSave);
+            this.Controls.Add(this.TxtRepairCost);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.TxtSpareCost);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.CmbSpare);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.TxtProblem);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.TxtDeviceModel);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.TxtDeviceName);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TxtNuber);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.CmbCostomer);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.DtRepairDate);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm1";
             this.Text = "Frm1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Frm1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataBinder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DtgList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button BtnLogin;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button BtnDelete;
+        private System.Windows.Forms.Button BtnSave;
+        private System.Windows.Forms.TextBox TxtRepairCost;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox TxtSpareCost;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox CmbSpare;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox TxtProblem;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox TxtDeviceModel;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TxtDeviceName;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtNuber;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox CmbCostomer;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker DtRepairDate;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.BindingSource dataBinder;
+        private ADGV.AdvancedDataGridView DtgList;
     }
 }

@@ -115,7 +115,7 @@ namespace UserInterface
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
 
-        private void DtgList_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        private void DtgList_CellMouseClick_1(object sender, DataGridViewCellMouseEventArgs e)
         {
             if (DtgList.CurrentRow == null)
             {
@@ -126,6 +126,16 @@ namespace UserInterface
             id = DtgList.CurrentRow.Cells["Id"].Value.ConInt();
             TxtName.Text = DtgList.CurrentRow.Cells["Name"].Value.ToString();
             TxtCost.Text = DtgList.CurrentRow.Cells["Cost"].Value.ToString();
+        }
+
+        private void DtgList_FilterStringChanged(object sender, EventArgs e)
+        {
+            dataBinder.Filter = DtgList.FilterString;
+        }
+
+        private void DtgList_SortStringChanged(object sender, EventArgs e)
+        {
+            dataBinder.Sort = DtgList.SortString;
         }
     }
 }

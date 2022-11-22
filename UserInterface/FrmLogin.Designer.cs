@@ -103,7 +103,7 @@ namespace UserInterface
             this.TxtUserName.Location = new System.Drawing.Point(164, 172);
             this.TxtUserName.Name = "TxtUserName";
             this.TxtUserName.Size = new System.Drawing.Size(283, 22);
-            this.TxtUserName.TabIndex = 4;
+            this.TxtUserName.TabIndex = 1;
             // 
             // BtnLogin
             // 
@@ -113,7 +113,7 @@ namespace UserInterface
             this.BtnLogin.Location = new System.Drawing.Point(245, 281);
             this.BtnLogin.Name = "BtnLogin";
             this.BtnLogin.Size = new System.Drawing.Size(120, 39);
-            this.BtnLogin.TabIndex = 6;
+            this.BtnLogin.TabIndex = 3;
             this.BtnLogin.Text = "Login";
             this.BtnLogin.UseVisualStyleBackColor = false;
             this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
@@ -125,7 +125,7 @@ namespace UserInterface
             this.LinkCreateAccount.Location = new System.Drawing.Point(256, 331);
             this.LinkCreateAccount.Name = "LinkCreateAccount";
             this.LinkCreateAccount.Size = new System.Drawing.Size(99, 16);
-            this.LinkCreateAccount.TabIndex = 7;
+            this.LinkCreateAccount.TabIndex = 5;
             this.LinkCreateAccount.TabStop = true;
             this.LinkCreateAccount.Text = "Create Account";
             this.LinkCreateAccount.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkCreateAccount_LinkClicked);
@@ -137,7 +137,7 @@ namespace UserInterface
             this.BtnSee.Location = new System.Drawing.Point(453, 232);
             this.BtnSee.Name = "BtnSee";
             this.BtnSee.Size = new System.Drawing.Size(24, 22);
-            this.BtnSee.TabIndex = 16;
+            this.BtnSee.TabIndex = 4;
             this.BtnSee.UseVisualStyleBackColor = true;
             this.BtnSee.Click += new System.EventHandler(this.BtnSee_Click);
             // 
@@ -147,7 +147,7 @@ namespace UserInterface
             this.TxtPassword.Location = new System.Drawing.Point(164, 232);
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.Size = new System.Drawing.Size(283, 22);
-            this.TxtPassword.TabIndex = 17;
+            this.TxtPassword.TabIndex = 2;
             this.TxtPassword.UseSystemPasswordChar = true;
             // 
             // FrmLogin
