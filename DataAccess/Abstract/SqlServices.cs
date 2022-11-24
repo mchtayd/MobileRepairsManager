@@ -18,21 +18,21 @@ namespace DataAccess.Abstract
         public SqlServices()
         {
 
-            //conString = "Data Source=DESKTOP-QB5K7DU; Database=MobileRepairsManagerData; Integrated Security=True";
 
-            //conString = @"Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=aspnet-MvcMovie;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\Movies.mdf";
 
-            string databasePath = System.Reflection.Assembly.GetExecutingAssembly().Location.Replace("DataAccess.dll", "MobileRepairsManagerData.mdf");
-            conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + databasePath + ";Integrated Security=True; Connect Timeout=30"; // SERVER
+            string databasePath = System.Reflection.Assembly.GetExecutingAssembly().Location.Replace("DataAccess.dll", "MobilRepairDatabase.mdf");
+
+            conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename="+ databasePath; // SERVER
 
             connection = new SqlConnection
             {
                 ConnectionString = conString // bağlantı yolu bağlantı kuran değişkenin içine atandı.
             };
         }
+        
 
-        //veri tabanı kapalıysa aç metodu.
-        SqlConnection OpenConnection()
+       //veri tabanı kapalıysa aç metodu.
+       SqlConnection OpenConnection()
         {
 
             if (connection.State == ConnectionState.Closed)
